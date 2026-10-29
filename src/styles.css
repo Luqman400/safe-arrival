@@ -1,0 +1,37 @@
+body{font-family:system-ui,sans-serif;margin:0;background:#f5f6f8;color:#1a1a1a}
+.wrap{max-width:900px;margin:0 auto;padding:16px}
+nav{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+button,input{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid #ccc}
+button{background:#1f6feb;color:#fff;border:0;cursor:pointer}button.ghost{background:#fff;color:#1a1a1a;border:1px solid #ccc}
+button.on{background:#0b3d91}
+.card{background:#fff;border-radius:12px;padding:16px;margin-bottom:12px;box-shadow:0 1px 3px #0001}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stats b{font-size:28px;display:block}
+.ok{background:#e6f7ec}.warn{background:#fff6e0}.bad{background:#fde8e8}
+table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:6px;border-bottom:1px solid #eee}
+form{display:grid;gap:8px}.qr{display:inline-block;text-align:center;margin:8px;padding:8px;border:1px dashed #999;font-size:12px}
+@media print{nav,form,.noprint{display:none}}
+select{font:inherit;padding:8px 12px;border-radius:8px;border:1px solid #ccc}
+h2 small{font-size:12px;font-weight:normal;color:#666}
+/* modern dashboard */
+.brand{align-self:center;margin-right:12px;font-size:18px}
+.head h1{margin:0;font-size:26px}.muted{color:#6b7280;margin:2px 0 16px;font-size:14px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:8px}
+.kpi{background:#fff;border-radius:14px;padding:16px;box-shadow:0 1px 3px #0001;border-left:4px solid #94a3b8}
+.kpi span{color:#6b7280;font-size:13px}.kpi b{display:block;font-size:30px;margin-top:4px}
+.kpi.green{border-color:#16a34a}.kpi.amber{border-color:#f59e0b}.kpi.blue{border-color:#1f6feb}
+.bar{height:8px;background:#e5e7eb;border-radius:99px;overflow:hidden;margin-top:8px}
+.fill{height:100%;background:#1f6feb;border-radius:99px;transition:width .3s}
+.sec{margin:20px 0 8px}
+.classgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.classcard{background:#fff;color:#1a1a1a;border:2px solid transparent;border-radius:12px;padding:12px;text-align:left;box-shadow:0 1px 3px #0001}
+.classcard.sel{border-color:#1f6feb}.row{display:flex;justify-content:space-between}
+.panel{background:#fff;border-radius:14px;padding:16px;margin-top:16px;box-shadow:0 1px 3px #0001}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.filters input{flex:1;min-width:200px}
+.inline{display:flex;gap:8px;margin-bottom:12px}.inline input{flex:1}
+.scroll{overflow-x:auto}
+.tbl{width:100%;border-collapse:collapse}
+.tbl th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#6b7280;background:#f9fafb;padding:10px;text-align:left}
+.tbl td{padding:10px;border-bottom:1px solid #f0f0f0}.tbl tr:hover td{background:#fafbff}
+.empty{text-align:center;color:#6b7280;padding:24px}
+.badge{padding:3px 10px;border-radius:99px;font-size:12px;font-weight:600}
+.badge.g{background:#dcfce7;color:#166534}.badge.a{background:#fef3c7;color:#92400e}
